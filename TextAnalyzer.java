@@ -13,7 +13,7 @@ public class TextAnalyzer {
 		int lowCount = 0;
 		int other = 0;
 		try {
-// Change "something.txt" to any file you want in order to scan a specific file.
+// Change "something.txt" to any other text file you want in order to scan a specific file.
 
 			Scanner in = new Scanner(new FileReader("something.txt"));
 			while (in.hasNext()) {
