@@ -13,9 +13,13 @@ public class TextAnalyzer {
 		int lowCount = 0;
 		int other = 0;
 		try {
-// Change "something.txt" to any other text file you want in order to scan a specific file.
+// User must input the file name & extension to allow the Scanner to work.
 
-			Scanner in = new Scanner(new FileReader("something.txt"));
+			System.out.print("Please enter the file name you would like to scan : ");
+            		Scanner in = new Scanner(System.in);
+            		File file = new File(in.nextLine());
+            		in = new Scanner(file);
+			
 			while (in.hasNext()) {
 				String s = in.nextLine();
 				char[] charAnalysis = s.toCharArray();
